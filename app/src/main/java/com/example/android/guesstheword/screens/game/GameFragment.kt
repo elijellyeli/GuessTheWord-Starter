@@ -60,7 +60,7 @@ class GameFragment : Fragment() {
         // Specify the current activity as the lifecycle owner of the binding.
         // This is used so that the binding can observe LiveData updates
         binding.lifecycleOwner = this
-        
+
 
         // Observer for the Game finished event
         viewModel.eventGameFinish.observe(this, Observer<Boolean> { hasFinished ->
